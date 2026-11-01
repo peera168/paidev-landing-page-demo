@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe — กาแฟดี วันดี</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">Cafe<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">หน้าแรก</a>
+      <a href="#about">เกี่ยวกับเรา</a>
+      <a href="#menu">เมนู</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู">☰</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content reveal">
+      <p class="eyebrow">ยินดีต้อนรับสู่</p>
+      <h1>Cafe</h1>
+      <p class="tagline">กาแฟคั่วสดทุกเช้า ในบรรยากาศอบอุ่นเหมือนอยู่บ้าน</p>
+      <a href="#menu" class="btn">ดูเมนู</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-img reveal">☕</div>
+      <div class="about-text reveal">
+        <h2>เรื่องราวของเรา</h2>
+        <p>
+          Cafe เริ่มต้นจากความรักในกาแฟแก้วเล็กๆ เราคัดเมล็ดกาแฟจากเกษตรกรไทยบนดอยสูง
+          คั่วเองทุกสัปดาห์ เพื่อให้ทุกแก้วหอมกรุ่นและสดใหม่ที่สุด
+        </p>
+        <div class="stats">
+          <div><strong class="counter" data-target="12">0</strong><span>เมนูซิกเนเจอร์</span></div>
+          <div><strong class="counter" data-target="5">0</strong><span>ปีที่เปิดร้าน</span></div>
+          <div><strong class="counter" data-target="3000">0</strong><span>ลูกค้าประจำ</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2 class="section-title reveal">เมนูแนะนำ</h2>
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">ทั้งหมด</button>
+        <button class="filter" data-filter="coffee">กาแฟ</button>
+        <button class="filter" data-filter="tea">ชา</button>
+        <button class="filter" data-filter="bakery">เบเกอรี่</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <!-- สร้างด้วย JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <h2>แวะมาหาเรา</h2>
+        <p>📍 123 ถนนสุขุมวิท กรุงเทพฯ</p>
+        <p>🕗 เปิดทุกวัน 07:00 – 19:00</p>
+        <p>📞 02-123-4567</p>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <input type="text" id="name" placeholder="ชื่อของคุณ" required />
+        <input type="email" id="email" placeholder="อีเมล" required />
+        <textarea id="message" rows="4" placeholder="ข้อความ" required></textarea>
+        <button type="submit" class="btn">ส่งข้อความ</button>
+        <p class="form-msg" id="formMsg"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Cafe. All rights reserved.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="กลับขึ้นด้านบน">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
